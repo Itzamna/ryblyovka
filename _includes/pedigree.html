@@ -1,0 +1,74 @@
+<table width="900px" border="1" id="pedigree"> 	
+<colgroup><col width="33%"></col> 	<col width="33%"></col> 	<col width="33%"></col> 	</colgroup>
+<thead>
+<center>Родословная</center>
+</thead>
+  <tbody>
+    <tr valign="TOP">
+		<td rowspan="4" width="33%"> 	
+    <? echo view('dogs/'.$father); ?>	
+		</td> 		
+		<td rowspan="2" width="33%"> 	
+    <? echo view('dogs/'.$father_father); ?>	
+		</td> 		
+		<td width="33%"> 			
+    <? echo view('dogs/'.$father_father_father); ?>	
+		</td> 	
+	 </tr>
+   	
+    <tr valign="TOP"> 		
+		<td width="33%">
+    <? echo view('dogs/'.$father_father_mother); ?>	
+       	</td> 	
+	</tr>
+   	
+    <tr valign="TOP"> 		
+		<td rowspan="2" width="33%"> 
+    <? echo view('dogs/'.$father_mother); ?>	
+       	</td> 		
+		<td width="33%"> 			
+    <? echo view('dogs/'.$father_mother_father); ?>
+		</td> 	
+	</tr>
+   	
+    <tr valign="TOP"> 		
+		<td width="33%"> 			
+    <? echo view('dogs/'.$father_mother_mother); ?>
+		</td> 	
+	</tr>
+
+   	
+    <tr valign="TOP"> 		
+		<td rowspan="4" width="33%"> 			
+      <? echo view('dogs/'.$mother); ?>	
+		</td> 		
+		<td rowspan="2" width="33%"> 
+      <? echo view('dogs/'.$mother_father); ?>	
+    </td> 		
+		<td width="33%"> 
+      <? echo view('dogs/'.$mother_father_father); ?>	
+		</td> 	
+	</tr>
+   	
+    <tr valign="TOP"> 		
+		<td width="33%"> 			
+      <? echo view('dogs/'.$mother_father_mother); ?>	
+       	</td> 	
+	</tr>
+   	
+    <tr valign="TOP"> 		
+		<td rowspan="2" width="33%">
+      <? echo view('dogs/'.$mother_mother); ?>	
+    </td> 		
+		<td width="33%">
+      <? echo view('dogs/'.$mother_mother_father); ?>	
+       	</td> 	
+	</tr>
+   	
+    <tr valign="TOP"> 		
+		<td width="33%"> 
+      <? echo view('dogs/'.$mother_mother_mother); ?>	
+    </td> 	
+	</tr>
+   </tbody>
+</table>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" /> 
+  <link rel="shortcut icon" href="../public/favicon.ico" type="image/x-icon" />
+<meta name="keywords" content="шпиц, померанский шпиц, щенки шпица на продажу, пом, питомник шпицев" />
+<meta name="description" content="Сайт монопородного питомника шпицев С Рублевки" />
+  <script type="text/javascript" src="../public/js/jquery.js"></script>
+	<link rel="stylesheet" href="../public/css/styles.css" type="text/css" media="screen, projection" />
+  <script src="../public/jquery/thickbox/js/thickbox.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../public/jquery/thickbox/css/thickbox.css" type="text/css">
+  <script type="text/javascript" src="../public/js/jquery.js"></script>
+  <script type="text/javascript" src="../public/js/harmony.js"></script>
+  <script type="text/javascript" src="../public/js/slide.js"></script>   
+  <!--  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css' />-->
+  <style>
+  @font-face {
+    font-family: Mistral;
+   src: url(Mistral.eot); /* Для IE5-8 */
+      src: local(Mistral), url(Mistral.ttf); /* Для остальных браузеров */
+  }
+  @font-face {
+   font-family: 'Mistral';
+   src: url("Mistral.eot") /* EOT file for IE */
+  }
+  @import url(http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic);
+  </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<title>Померанские шпицы. Питомник С Рублевки - {{ page.title }}</title>
+</head>
+
+<body>
+<div id="main">
+  <div id="header">
+    {% include menu.html %}
+    <div id="logo"><a href="http://ryblyovka.spitz.su/"></a></div>
+  </div>
+  <div id="cont_top">
+    <div id="cont_bot">
+      <div id="content">
+        <div id="razd">
+          <div id="left">
+            {% include news.html %}
+          </div>
+          <div id="center">
+            <h1>{{ page.title }}</h1>
+            <div class="text">
+              {{ content }}
+            </div>
+          </div>
+          <div class="right">
+            {% include contacts.html %}
+          </div>
+          <div style="clear: both"><img src="../public/images/spaser.gif" alt="" width="1" height="1" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    {% include footer.html %}  
+  </div>
+</div>
+</body>
+</html>
